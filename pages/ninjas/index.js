@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link'
 
 
 
@@ -23,10 +24,11 @@ const Ninjas = ({ ninjas }) => {
       <div >
         <h1>All Ninjas</h1>
         {ninjas.map(ninja => (
-          <div className="single" key={ninja.id}>
-            <a ><h3>{ninja.name}</h3></a>
-            <p>email: {ninja.email}</p>
-          </div>
+          <Link href={'ninjas/' + ninja.id} key={ninja.id}>
+            <a className="single">
+              <h3>{ ninja.company.name }</h3>
+            </a>
+          </Link>
         ))}
 
       </div>

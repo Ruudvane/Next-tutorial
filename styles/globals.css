@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');
 
 body {
-  background: #f5f4f4;
+  background: #f7f7f7;
   color: #333;
   font-family: "Nunito";
 }
@@ -19,13 +19,15 @@ nav {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid rgb(0, 0, 0);
 }
 nav a {
   margin-left: 12px;
 }
 nav .logo {
   margin-right: auto;
+  font-weight: bold;
+  font-size: 20px;
 }
 footer {
   display: block;
@@ -53,4 +55,16 @@ footer {
 
 .single:hover {
   border-left: 8px solid #60ce07;
+}
+
+.card {
+  padding: 2px 26px;
+  background: #FFF;
+  display: block;
+  margin: 20px 10px;
+}
+
+.card a {
+  color:rgb(216, 6, 6);
+  font-weight: bold;
 }
