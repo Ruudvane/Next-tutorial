@@ -14,31 +14,24 @@ const Ninjas = ({ ninjas }) => {
   return (
     <>
       <Head>
-        <title>Ninja List | Ninjas</title>
+        <title>Van Eldik Media | Partners</title>
         <meta name="keywords" content="ninjas" />
       </Head>
       <div>
         <h1>All Ninjas</h1>
 
-
         <div className="grid">
-
           {ninjas.map((ninja) => (
             <div className="card">
-
               <Link href={"ninjas/" + ninja.id} key={ninja.id}>
                 <a>
                   <h3>{ninja.company.name}</h3>
-
                 </a>
               </Link>
             </div>
-
           ))}
-
         </div>
       </div>
-
     </>
   );
 };

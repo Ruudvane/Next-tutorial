@@ -72,7 +72,7 @@ export default function Home() {
           <h3>Our Partners</h3>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           <Link href="/ninjas">
-            <a className="btn">See Ninja Listing</a>
+            <a className="btn">Our Partners</a>
           </Link>
         </div>
       </div>
