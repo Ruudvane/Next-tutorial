@@ -11,7 +11,7 @@ export default function Home() {
         <meta name="keywords" content="ninjas" />
       </Head>
       <div className="hero">
-        <h1>Let's take a ride</h1>
+        <h1>Let's take a ride!</h1>
         <Image
           src="/scooter.jpg"
           alt="Scooter"
