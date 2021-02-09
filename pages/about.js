@@ -6,7 +6,7 @@ const About = () => {
         <title>Ninja List | About</title>
         <meta name="keywords" content="ninjas" />
       </Head>
-      <div>
+      <div className="card">
         <h1>About</h1>
         <p>
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo rem

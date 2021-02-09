@@ -10,7 +10,7 @@ const NotFound = () => {
   useEffect(() => {
     setTimeout(() => {
       router.push("/");
-    }, 1500);
+    }, 2500);
   }, []);
   return (
     <>
@@ -18,7 +18,7 @@ const NotFound = () => {
         <title>Ninja List | 404</title>
         <meta name="keywords" content="ninjas" />
       </Head>
-      <div className="not-found">
+      <div className="card">
         <h1>Oops...</h1>
         <h2>That page cannot be found.</h2>
         <p>

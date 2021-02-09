@@ -1,28 +1,50 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap");
 
 body {
   background: #f7f7f7;
-  color: #333;
-  font-family: "Nunito";
+  color: rgb(82, 82, 82);
+  font-family: "Ubuntu", sans-serif;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-gap: 25px;
+}
+
+.hero {
+  margin-bottom: 35px;
+}
+
+h1 {
+  letter-spacing: -1.75px;
 }
 a {
-  color: #333;
+  color: rgb(73, 73, 73);
   text-decoration: none;
 }
 .content {
-  max-width: 1080px;
+  max-width: 1200px;
   margin: 0 auto;
 }
+
 nav {
+  height: 50px;
+  position: sticky;
+  z-index: 10;
+  top: 0;
+  backdrop-filter: saturate(180%) blur(20px);
+  /* background-color: rgba(255, 255, 255, 0.753); */
   margin: 10px auto 80px;
   padding: 10px 0;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  border-bottom: 1px solid rgb(0, 0, 0);
+  /* border-bottom: 1px solid rgb(236, 236, 236); */
 }
 nav a {
   margin-left: 12px;
+  font-weight: bold;
 }
 nav .logo {
   margin-right: auto;
@@ -40,31 +62,65 @@ footer {
 .not-found {
   text-align: center;
 }
-.not-found a{
+.not-found a {
   color: #4979ff;
   text-decoration: underline;
 }
 
 .single {
   padding: 2px 16px;
-  background: #FFF;
+  background: #fff;
   display: block;
   margin: 20px 10px;
   border-left: 8px solid rgb(2, 2, 2);
 }
 
 .single:hover {
-  border-left: 8px solid #60ce07;
+  border-left: 8px solid #00c2c2;
+}
+
+.btn {
+  display: block;
+  width: 200px;
+  padding: 8px 16px;
+  margin: 20px auto;
+  background: #ffbe26;
+  border-bottom: 3px solid #ffa631;
+  color: white;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* .btn  {
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  border-radius: 0px;
+} */
+
+.btn:hover {
+  background: #00c2c2;
 }
 
 .card {
-  padding: 2px 26px;
-  background: #FFF;
+  padding: 26px;
+  background: #fff;
   display: block;
-  margin: 20px 10px;
+  border-bottom: 1px solid rgb(230, 230, 230);
 }
 
-.card a {
-  color:rgb(216, 6, 6);
-  font-weight: bold;
+.card {
+  padding: 26px;
+  display: block;
+  background: #00c2c0;
+  color: white;
+}
+span {
+  color: #00c2c2;
+}
+
+li {
+  list-style: none;
 }

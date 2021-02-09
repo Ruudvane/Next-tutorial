@@ -1,18 +1,14 @@
-import Head from 'next/head'
-import Link from 'next/link'
-
-
+import Head from "next/head";
+import Link from "next/link";
 
 export const getStaticProps = async () => {
-
-  const res = await fetch('https://jsonplaceholder.typicode.com/users');
+  const res = await fetch("https://jsonplaceholder.typicode.com/users");
   const data = await res.json();
 
   return {
-    props: { ninjas: data }
-  }
-
-}
+    props: { ninjas: data },
+  };
+};
 
 const Ninjas = ({ ninjas }) => {
   return (
@@ -21,19 +17,30 @@ const Ninjas = ({ ninjas }) => {
         <title>Ninja List | Ninjas</title>
         <meta name="keywords" content="ninjas" />
       </Head>
-      <div >
+      <div>
         <h1>All Ninjas</h1>
-        {ninjas.map(ninja => (
-          <Link href={'ninjas/' + ninja.id} key={ninja.id}>
-            <a className="single">
-              <h3>{ ninja.company.name }</h3>
-            </a>
-          </Link>
-        ))}
 
+
+        <div className="grid">
+
+          {ninjas.map((ninja) => (
+            <div className="card">
+
+              <Link href={"ninjas/" + ninja.id} key={ninja.id}>
+                <a>
+                  <h3>{ninja.company.name}</h3>
+
+                </a>
+              </Link>
+            </div>
+
+          ))}
+
+        </div>
       </div>
+
     </>
   );
-}
+};
 
 export default Ninjas;

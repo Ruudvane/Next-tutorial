@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link'
 
 
 export const getStaticPaths = async () => {
@@ -39,15 +40,20 @@ const Details = ({ ninja }) => {
 
             <div className="card">
                 <h2>{ninja.company.name}</h2>
-                <p>Contact Person: {ninja.name}</p>
-                <p>Email: {ninja.email}</p>
-                <p>Phone: {ninja.phone}</p>
-                <p>Website:  <a href="https://{ ninja.website }">{ninja.website}</a></p>
-                <p>City: {ninja.address.city}</p>
+
+                <li>Contact Person: {ninja.name}</li>
+                <li>Email: {ninja.email}</li>
+                <li>Phone: {ninja.phone}</li>
+                <li>Website:  <a href="https://{ ninja.website }">{ninja.website}</a></li>
+                <li>City: {ninja.address.city}</li>
 
 
+
+                <Link href="/ninjas"><a className="btn">back to list</a></Link>
 
             </div>
+
+
         </>
     );
 }
