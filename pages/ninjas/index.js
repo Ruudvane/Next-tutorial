@@ -28,6 +28,7 @@ const Ninjas = ({ ninjas }) => {
                   <h3>{ninja.company.name}</h3>
                 </a>
               </Link>
+              <p>City: {ninja.address.city}</p>
             </div>
           ))}
         </div>

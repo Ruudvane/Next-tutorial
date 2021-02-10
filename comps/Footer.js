@@ -1,8 +1,8 @@
 const Footer = () => {
     return (
         <footer>
-            <p>Copyright 2021 - Ruud van Eldik</p>
-            <p>Created with NextJS - Hosted by <bold>vercel.com</bold></p>
+            <p><strong>Copyright 2021 - Ruud van Eldik</strong></p>
+            <p>Created with NextJS - Hosted by <a href="https://nextjs.org/"><strong>vercel.com</strong></a></p>
         </footer>
     );
 }

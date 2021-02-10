@@ -1,7 +1,11 @@
+@use "base";
+
+// SASS preprocessor built in NextJS
+
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap");
 
 body {
-  background: #f7f7f7;
+  background: #ffffff;
   color: rgb(82, 82, 82);
   font-family: "Ubuntu", sans-serif;
 }
@@ -23,18 +27,14 @@ a {
   color: rgb(73, 73, 73);
   text-decoration: none;
 }
-.content {
-  max-width: 1200px;
-  margin: 0 auto;
-}
 
 nav {
   height: 50px;
   position: sticky;
   z-index: 10;
   top: 0;
-  backdrop-filter: saturate(180%) blur(20px);
-  /* background-color: rgba(255, 255, 255, 0.753); */
+  //   backdrop-filter: saturate(180%) blur(20px);
+  background-color: rgba(255, 255, 255, 0.904);
   margin: 10px auto 80px;
   padding: 10px 0;
   display: flex;
@@ -46,11 +46,14 @@ nav a {
   margin-left: 12px;
   font-weight: bold;
 }
+
 nav .logo {
+  margin-left: 0;
   margin-right: auto;
   font-weight: bold;
   font-size: 20px;
 }
+
 footer {
   display: block;
   text-align: center;
@@ -84,8 +87,8 @@ footer {
   width: 200px;
   padding: 8px 16px;
   margin: 20px auto;
-  background: #ffbe26;
-  border-bottom: 3px solid #ffa631;
+  //   background: base.$background;
+  background: lighten($color: base.$background, $amount: 5);
   color: white;
   font-size: 14px;
   letter-spacing: 1px;
@@ -94,33 +97,37 @@ footer {
   text-transform: uppercase;
 }
 
-/* .btn  {
-  color: rgb(255, 255, 255);
-  font-weight: bold;
-  border-radius: 0px;
-} */
-
 .btn:hover {
-  background: #00c2c2;
-}
-
-.card {
-  padding: 26px;
-  background: #fff;
-  display: block;
-  border-bottom: 1px solid rgb(230, 230, 230);
+  background: darken($color: base.$background, $amount: 10);
 }
 
 .card {
   padding: 26px;
   display: block;
-  background: #00c2c0;
-  color: white;
+  background: base.$background;
+  //   color: white;
+
+  a {
+    color: white;
+  }
+
+  a:hover {
+    color: #ffbc27;
+  }
 }
 span {
-  color: #00c2c2;
+  color: base.$background;
 }
 
 li {
   list-style: none;
+}
+
+footer {
+  color: white;
+  background-color: base.$background;
+
+  a:hover {
+    color: #ffbc27;
+  }
 }
