@@ -10,7 +10,7 @@ const NotFound = () => {
   useEffect(() => {
     setTimeout(() => {
       router.push("/");
-    }, 4000);
+    }, 3000);
   }, []);
   return (
     <>
@@ -23,7 +23,10 @@ const NotFound = () => {
         <h2>That page cannot be found.</h2>
         <p>You'll be redirected to the homepage...</p>
         <p>
-          Go back to the <Link href="/"><a className="btn">Homepage</a></Link>
+          Go back to the{" "}
+          <Link href="/">
+            <a className="btn">Homepage</a>
+          </Link>
         </p>
       </div>
     </>

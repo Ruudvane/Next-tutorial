@@ -7,13 +7,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap");
 
 body {
-  background: #ffffff;
+  background: whitesmoke;
   color: rgb(82, 82, 82);
   font-family: "Ubuntu", sans-serif;
   line-height: 1.5;
 }
 
 .grid {
+  margin: 85px 0px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 25px;
@@ -72,8 +73,9 @@ footer {
 .card {
   padding: 26px;
   // display: block;
-  background: base.$primary;
-  color: white;
+  // background: base.$primary;
+  color: rgb(0, 0, 0);
+  background-color: #fff;
 
   a {
     color: white;

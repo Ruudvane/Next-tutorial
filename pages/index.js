@@ -14,7 +14,7 @@ export default function Home() {
         <div className="container">
           <section>
             <div className="hero">
-              <h1>Let's take a ride!</h1>
+              {/* <h1>Let's take a ride!</h1> */}
               <Image
                 src="/scooter.jpg"
                 alt="Scooter"
@@ -29,12 +29,18 @@ export default function Home() {
             <div className="grid">
               <div className="card">
                 <h2>Workflow</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates esse qui eum obcaecati alias modi totam sed, itaque, similique repellat consequuntur dolore.</p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Voluptates esse qui eum obcaecati alias modi totam sed,
+                  itaque, similique repellat consequuntur dolore.
+                </p>
               </div>
               <div className="card">
                 <h2>Research</h2>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio totam aut hic voluptates. Est deleniti dolor cupiditate error? Ullam eius hic doloribus error id velit.
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Optio totam aut hic voluptates. Est deleniti dolor cupiditate
+                  error? Ullam eius hic doloribus error id velit.
                 </p>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -44,16 +50,16 @@ export default function Home() {
               <div className="card">
                 <h2>Contact</h2>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
-                  soluta quia odio.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Facere soluta quia odio.
                 </p>
               </div>
               <div className="card">
                 <h2>Training</h2>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
-                  recusandae, dolorum a ratione eos sint vitae ipsum, illum tempore
-                  nam optio quas architecto, quidem ullam?
+                  recusandae, dolorum a ratione eos sint vitae ipsum, illum
+                  tempore nam optio quas architecto, quidem ullam?
                 </p>
               </div>
               <Image
@@ -74,8 +80,6 @@ export default function Home() {
           </section>
         </div>
       </main>
-
-
     </>
   );
 }
