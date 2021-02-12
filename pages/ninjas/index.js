@@ -17,22 +17,25 @@ const Ninjas = ({ ninjas }) => {
         <title>Van Eldik Media | Partners</title>
         <meta name="keywords" content="ninjas" />
       </Head>
-      <div>
-        <h1>All Ninjas</h1>
 
-        <div className="grid">
-          {ninjas.map((ninja) => (
-            <div className="card">
-              <Link href={"ninjas/" + ninja.id} key={ninja.id}>
-                <a>
-                  <h3>{ninja.company.name}</h3>
-                </a>
-              </Link>
-              <p>City: {ninja.address.city}</p>
-            </div>
-          ))}
+      <main>
+        <div className="container">
+          <h1>Our partners</h1>
+
+          <div className="grid">
+            {ninjas.map((ninja) => (
+              <div className="card">
+                <Link href={"ninjas/" + ninja.id} key={ninja.id}>
+                  <a>
+                    <h3>{ninja.company.name}</h3>
+                  </a>
+                </Link>
+                <p>City: {ninja.address.city}</p>
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
+      </main>
     </>
   );
 };

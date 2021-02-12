@@ -1,4 +1,5 @@
 import Head from "next/head";
+
 const About = () => {
   return (
     <>
@@ -6,13 +7,16 @@ const About = () => {
         <title>Ninja List | About</title>
         <meta name="keywords" content="ninjas" />
       </Head>
-      <div className="card">
-        <h1>About</h1>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo rem
-          nisi ducimus deleniti, officia mollitia.
-        </p>
-      </div>
+
+      <main>
+        <div className="container">
+          <h1>About</h1>
+          <p>
+            We are a software company and we love to make fast web-apps and huge
+            websites.
+          </p>
+        </div>
+      </main>
     </>
   );
 };

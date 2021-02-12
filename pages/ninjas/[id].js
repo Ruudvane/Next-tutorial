@@ -37,21 +37,26 @@ const Details = ({ ninja }) => {
                 <meta name="keywords" content="ninjas" />
             </Head>
 
+            <main>
+                <div className="container">
+                    <div className="card">
+                        <h2>{ninja.company.name}</h2>
 
-            <div className="card">
-                <h2>{ninja.company.name}</h2>
-
-                <li>Contact Person: {ninja.name}</li>
-                <li>Email: {ninja.email}</li>
-                <li>Phone: {ninja.phone}</li>
-                <li>Website:  <a href="https://{ ninja.website }">{ninja.website}</a></li>
-                <li>City: {ninja.address.city}</li>
+                        <li>Contact Person: {ninja.name}</li>
+                        <li>Email: {ninja.email}</li>
+                        <li>Phone: {ninja.phone}</li>
+                        <li>Website:  <a href="https://{ ninja.website }">{ninja.website}</a></li>
+                        <li>City: {ninja.address.city}</li>
 
 
 
-                <Link href="/ninjas"><a className="btn">back to list</a></Link>
+                        <Link href="/ninjas"><a className="btn">back to list</a></Link>
 
-            </div>
+                    </div>
+                </div>
+            </main>
+
+
 
 
         </>

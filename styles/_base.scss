@@ -1,13 +1,20 @@
-$background: #0b797a;
+$primary: #00babb;
+$secondary: #fed53f;
 
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-.content {
+.container img {
+  display: block;
+  width: 100%;
+}
+
+.container {
   max-width: 1400px;
   margin: 0 auto;
-  padding: 10px;
 }
