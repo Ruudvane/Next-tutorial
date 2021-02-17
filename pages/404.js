@@ -18,16 +18,20 @@ const NotFound = () => {
         <title>Ninja List | 404</title>
         <meta name="keywords" content="ninjas" />
       </Head>
-      <div className="card">
-        <h1>Oops...</h1>
-        <h2>That page cannot be found.</h2>
-        <p>You'll be redirected to the homepage...</p>
-        <p>
-          Go back to the{" "}
-          <Link href="/">
-            <a className="btn">Homepage</a>
-          </Link>
-        </p>
+
+      <div className="container">
+
+        <div className="card">
+          <h1>Oops...</h1>
+          <h2>That page cannot be found.</h2>
+          <p>You'll be redirected to the homepage...</p>
+          <p>
+            Go back to the{" "}
+            <Link href="/">
+              <a className="btn">Homepage</a>
+            </Link>
+          </p>
+        </div>
       </div>
     </>
   );

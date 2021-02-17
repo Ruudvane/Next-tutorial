@@ -10,11 +10,16 @@ const About = () => {
 
       <main>
         <div className="container">
-          <h1>About</h1>
-          <p>
-            We are a software company and we love to make fast web-apps and huge
-            websites.
-          </p>
+          <div className="grid">
+            <div className="card">
+              <h2>About us</h2>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta sed totam natus fugit repellat officia architecto tenetur corporis suscipit quaerat?</p>
+            </div>
+            <div className="card">
+              <h2>No Cards</h2>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident doloribus ut totam harum delectus obcaecati voluptatem quidem perspiciatis! Vel aspernatur consequatur necessitatibus obcaecati eaque consectetur placeat officiis eius voluptates veritatis corrupti.</p>
+            </div>
+          </div>
         </div>
       </main>
     </>

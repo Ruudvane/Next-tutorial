@@ -1,20 +1,39 @@
 $primary: #00babb;
 $secondary: #fed53f;
 
-*,
-*::before,
-*::after {
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-.container img {
-  display: block;
-  width: 100%;
+.container {
+  // margin-inline: auto;
+  width: min(95%, 87.5rem);
+  margin: 0 auto;
+  // padding: 10px;
+  overflow: hidden;
 }
 
-.container {
-  max-width: 1400px;
-  margin: 0 auto;
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.btn {
+  display: block;
+  max-width: 200px;
+  padding: 8px 16px;
+  margin: 20px 0px;
+  background: $secondary;
+  color: rgb(0, 0, 0);
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  &:hover {
+    background: darken($color: $secondary, $amount: 12);
+  }
 }

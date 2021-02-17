@@ -8,17 +8,15 @@ const Contact = () => {
         <meta name="keywords" content="ninjas" />
       </Head>
 
-
       <main>
         <div className="container">
           <h1>Contact</h1>
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo rem
             nisi ducimus deleniti, officia mollitia.
-        </p>
+          </p>
         </div>
       </main>
-
     </>
   );
 };
